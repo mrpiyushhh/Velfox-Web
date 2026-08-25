@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What we've shipped | Velfox</title>
+  <meta name="description"
+    content="Shipped systems, not capability slides. Computer vision on the line, operations in one dashboard, field work captured on the phone.">
+  <meta name="theme-color" content="#0A0D16">
+  <link rel="canonical" href="https://velfox.com/products.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Velfox">
+  <meta property="og:title" content="What we've shipped | Velfox">
+  <meta property="og:description"
+    content="Real problems, real users, real technology underneath.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      const saved = localStorage.getItem('velfox-theme');
+      const theme = saved === 'light' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#0A0D16');
+    })();
+  </script>
+  <noscript>
+    <style>
+      .reveal, .step { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="VelFox Home">
+        <img src="Dark Theme.svg" alt="VelFox" class="brand-logo logo-dark" width="130" height="42">
+        <img src="Light Theme.svg" alt="VelFox" class="brand-logo logo-light" width="130" height="42">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#top">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#how-we-work">How We Work</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="newsletter.html">Newsletter</a>
+        <div class="nav-menu-foot">
+          <button class="theme-switch" data-theme-toggle aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="switch-track">
+            <span class="switch-icon switch-icon-sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="2" x2="12" y2="4.5"></line>
+                <line x1="12" y1="19.5" x2="12" y2="22"></line>
+                <line x1="4.93" y1="4.93" x2="6.7" y2="6.7"></line>
+                <line x1="17.3" y1="17.3" x2="19.07" y2="19.07"></line>
+                <line x1="2" y1="12" x2="4.5" y2="12"></line>
+                <line x1="19.5" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="19.07" x2="6.7" y2="17.3"></line>
+                <line x1="17.3" y1="6.7" x2="19.07" y2="4.93"></line>
+              </svg>
+            </span>
+            <span class="switch-icon switch-icon-moon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                <path d="M18.5 2.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z"/>
+                <path d="M21 7.5l.3.7.7.3-.7.3-.3.7-.3-.7-.7-.3.7-.3z"/>
+              </svg>
+            </span>
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+          <a href="index.html#contact" class="btn btn-primary">Book a Discovery Call</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="index.html#contact" class="btn btn-primary btn-sm nav-book">
+          <span class="lbl-full">Book a Discovery Call</span>
+          <span class="lbl-short">Book a call</span>
+        </a>
+        <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="switch-track">
+            <span class="switch-icon switch-icon-sun">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4.5"></circle>
+                <line x1="12" y1="2" x2="12" y2="4.5"></line>
+                <line x1="12" y1="19.5" x2="12" y2="22"></line>
+                <line x1="4.93" y1="4.93" x2="6.7" y2="6.7"></line>
+                <line x1="17.3" y1="17.3" x2="19.07" y2="19.07"></line>
+                <line x1="2" y1="12" x2="4.5" y2="12"></line>
+                <line x1="19.5" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="19.07" x2="6.7" y2="17.3"></line>
+                <line x1="17.3" y1="6.7" x2="19.07" y2="4.93"></line>
+              </svg>
+            </span>
+            <span class="switch-icon switch-icon-moon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                <path d="M18.5 2.5l.4 1 1 .4-1 .4-.4 1-.4-1-1-.4 1-.4z"/>
+                <path d="M21 7.5l.3.7.7.3-.7.3-.3.7-.3-.7-.7-.3.7-.3z"/>
+              </svg>
+            </span>
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Products</span>
+        <h1>What we've <span class="grad">actually built</span>.</h1>
+        <p>Capability slides are easy. These are shipped: real problems, real users, real technology
+          underneath. Each one started as the kind of conversation you'd have on a Discovery Call.</p>
+      </div>
+    </section>
+
+
+    <!-- ============ PRODUCT 1 ============ -->
+    <section class="product-block" id="linesight">
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-media reveal" role="img"
+            aria-label="LineSight, live inspection view with a flagged unit on the line, 4:3">
+            <span>Screenshot coming (4:3)</span></div>
+          <div class="product-copy reveal reveal-delay-1">
+            <span class="eyebrow">AI Vision</span>
+            <h3>LineSight: Visual Inspection Platform</h3>
+            <div class="product-tags"><span>Manufacturing</span><span>Computer Vision</span><span>Real-time</span></div>
+            <p class="problem">On a mid-size manufacturer's line, quality still depended on a person with a torch and
+              a clipboard. Checks were slow, they drifted between shifts, and the defects that only showed under load
+              often left the floor.</p>
+            <p>LineSight watches the line in real time. Operators see a flagged item as it happens; quality leads
+              review a queue instead of walking the floor after the fact. Inspection rules belong to the plant, so they
+              change them without waiting on a release.</p>
+            <p><strong>Key features:</strong> real-time defect detection, configurable inspection rules, shift
+              alerting, and a review dashboard for flagged items.</p>
+            <div class="product-actions">
+              <a href="index.html#contact" class="btn btn-primary btn-sm">Request a walkthrough</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT 2 ============ -->
+    <section class="product-block" id="clearspan">
+      <div class="container">
+        <div class="product-grid reverse">
+          <div class="product-media reveal" role="img"
+            aria-label="Clearspan, operations dashboard with site-level KPIs, 4:3">
+            <span>Screenshot coming (4:3)</span></div>
+          <div class="product-copy reveal reveal-delay-1">
+            <span class="eyebrow">Web Application</span>
+            <h3>Clearspan: Operations Dashboard</h3>
+            <div class="product-tags"><span>Operations</span><span>Dashboards</span><span>API</span></div>
+            <p class="problem">A multi-site operator was running the business from four tools and a weekly
+              spreadsheet. Nobody had one picture of the day, so decisions waited on someone to stitch the numbers
+              together.</p>
+            <p>Clearspan pulls those sources into a single operations dashboard. Site managers start the morning in
+              one place; leadership sees the same numbers without a Friday scramble. Access is role-based, so people
+              see what they need and nothing they don't.</p>
+            <p><strong>Key features:</strong> unified reporting, role-based access, automated sync via API, and
+              exportable reports.</p>
+            <div class="product-actions">
+              <a href="index.html#contact" class="btn btn-primary btn-sm">Request a walkthrough</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT 3 ============ -->
+    <section class="product-block" id="groundday">
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-media reveal" role="img"
+            aria-label="Groundday, field form on a phone, offline badge visible, 4:3">
+            <span>Screenshot coming (4:3)</span></div>
+          <div class="product-copy reveal reveal-delay-1">
+            <span class="eyebrow">Mobile Application</span>
+            <h3>Groundday: Field Ops App</h3>
+            <div class="product-tags"><span>Field ops</span><span>Offline-first</span><span>AI-assisted</span></div>
+            <p class="problem">A distributed field team filled paper forms that took days to reach the office. By the
+              time the record landed, the job had moved on and the data was already wrong.</p>
+            <p>Groundday is the app in the van and on the site. Crews capture the job while they're standing in it,
+              including offline, and it syncs when the signal comes back. Supervisors see progress the same day, not
+              the following week.</p>
+            <p><strong>Key features:</strong> offline data capture, automatic sync, AI-assisted form completion, and
+              manager-facing reporting.</p>
+            <div class="product-actions">
+              <a href="index.html#contact" class="btn btn-primary btn-sm">Request a walkthrough</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band reveal">
+      <div class="container">
+        <div>
+          <h2>Building something similar?</h2>
+          <p>Most of these started as a rough problem, not a spec. Bring yours and we'll scope it.</p>
+        </div>
+        <div class="actions">
+          <a href="index.html#contact" class="btn btn-primary btn-lg">Book a Discovery Call</a>
+          <a href="index.html#services" class="btn btn-secondary btn-lg">See our services</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand" aria-label="VelFox Home">
+            <img src="Dark Theme.svg" alt="VelFox" class="brand-logo logo-dark" width="130" height="42">
+            <img src="Light Theme.svg" alt="VelFox" class="brand-logo logo-light" width="130" height="42">
+          </a>
+          <p class="footer-brand-copy">Applied AI and product engineering. Built into what you already run,
+            and handed over to your team.</p>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Site</h5>
+            <a href="index.html#top">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#how-we-work">How We Work</a>
+          </div>
+          <div class="footer-col">
+            <h5>More</h5>
+            <a href="products.html">Products</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="index.html#contact">Book a Discovery Call</a>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <a href="mailto:hello@velfox.com">hello@velfox.com</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Velfox. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:hello@velfox.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- ============ CHATBOT ============ -->
+  <button class="chatbot-launcher" aria-label="Open Velfox assistant" aria-expanded="false">
+    <svg class="chat-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path
+        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+    <svg class="close-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  </button>
+
+  <div class="chatbot-panel" role="dialog" aria-label="Velfox assistant">
+    <div class="chat-head">
+      <span class="dot"></span>
+      <div class="chat-head-text"><strong>Velfox Assistant</strong><span>Replies instantly</span></div>
+    </div>
+    <div class="chat-body"></div>
+    <div class="chat-quick"></div>
+    <form class="chat-input">
+      <input type="text" placeholder="Ask about our services…" autocomplete="off">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m22 2-7 20-4-9-9-4Z" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
